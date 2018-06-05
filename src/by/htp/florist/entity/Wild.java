@@ -11,9 +11,9 @@ public class Wild extends Flower {
 	
 	public Wild ( int lengthOfStem, String freshness, int price) {
 		
-	
+		
+	    super(freshness, price);
 		this.lengthOfStem = lengthOfStem;
-		this.freshness = freshness;
 		this.price = price;
 		
 	}

@@ -6,7 +6,8 @@ public class Flower extends Component {
 	public Flower() {
 	}
 	
-	public Flower (String freshness) {
+	public Flower (String freshness, int price) {
+		super(price);
 		this.freshness = freshness;
 		
 	}

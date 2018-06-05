@@ -9,7 +9,7 @@ import by.htp.florist.entity.Wild;
 
 public class Bouquet {
 	
-	Ribbon ribbon = new Ribbon (10, "red", 20);
+	Ribbon ribbon = new Ribbon ( "red",10, 20);
 	Wild wild = new Wild (10, "fresh", 20);
 	Synthetic synthetic = new Synthetic(10, "fresh", 20);
 	
@@ -20,10 +20,11 @@ public class Bouquet {
 		new Wild(),
 		new Synthetic(),
 };
-
+		
 for(Object p: components) {
-	System.out.println(p.toString());
+	System.out.println(p);
 }
+
 	}
 
 }

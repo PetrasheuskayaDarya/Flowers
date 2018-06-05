@@ -7,12 +7,11 @@ public class Ribbon extends Accessory {
 	public Ribbon() {
 	}
 	
-	public Ribbon ( int length, String color, int price) {
+	public Ribbon ( String color, int price, int length) {
 		
-	
+	    super(color, price);
 		this.length = length;
-		this.color = color;
-		this.price = price;
+		
 	}
 	
 	

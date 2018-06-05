@@ -7,8 +7,8 @@ public String color;
 	public Accessory() {
 	}
 	
-	public Accessory ( String color) {
-		
+	public Accessory ( String color,int price) {
+		super(price);
 		this.color = color;
 		
 	}

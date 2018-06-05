@@ -11,10 +11,9 @@ public class Synthetic extends Flower {
 	
 	public Synthetic ( int lengthOfStem, String freshness, int price) {
 		
-	
+	    super (freshness, price);
 		this.lengthOfStem = lengthOfStem;
-		this.freshness = freshness;
-		this.price = price;
+		
 		
 	}
 	
