@@ -16,5 +16,11 @@ public String color;
 	public String getColor() {
 		return this.color;
 	}
+
+	@Override
+	public String toString() {
+		return "Accessory [color=" + color + super.toString() + "]";
+	}
+	
 	
 }

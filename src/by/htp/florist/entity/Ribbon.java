@@ -19,5 +19,13 @@ public class Ribbon extends Accessory {
 	public int getLength() {
 		return this.length;
 	}
+
+	@Override
+	public String toString() {
+		return "Ribbon [length=" + length + super.toString() +"]";
+	}
+	
+	
+
 	
 }

@@ -1,26 +1,36 @@
 package by.htp.florist.entity;
 
+
 public class Wild extends Flower {
 
 	
-	public int lengthOfStem;
+	public String color;
 	
 	
 	public Wild() {
 	}
 	
-	public Wild ( int lengthOfStem, String freshness, int price) {
+	public Wild ( String freshness,int lengthOfStem, int price, String color) {
 		
 		
-	    super(freshness, price);
-		this.lengthOfStem = lengthOfStem;
-		this.price = price;
+	    super(freshness, lengthOfStem, price);
+		this.color = color;
 		
 	}
 
 	
-	public int getLengthOfStem() {
-		return this.lengthOfStem;
+	public String getColor() {
+		return this.color;
+	}
+	
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	@Override
+	public String toString() {
+		return "Wild [color=" + color +super.toString() + "]";
 	}
 	
 
