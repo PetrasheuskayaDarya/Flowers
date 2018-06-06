@@ -36,8 +36,16 @@ public class Component {
 	public String toString() {
 		return "Component [components=" + Arrays.toString(components) + ", price=" + price  +"]";
 	}
-	
-	
+
+	int j=0;
+	public void priceOfBouquet(){
+		int j=0;
+		for(int i = 0; i < components.length; i++) {
+			 j += components[i].getPrice();
+				
+		}
+		System.out.println(j);
+		}
 
 
 	

@@ -8,6 +8,7 @@ import by.htp.florist.entity.Synthetic;
 import by.htp.florist.entity.Wild;
 
 
+
 public class Bouquet {
 	public static void main(String[] args) {
 //	Цветочница. Определить иерархию цветов. Создать несколько объек-
@@ -44,6 +45,14 @@ public class Bouquet {
 	my.setComponents(components);
 	System.out.println(my);
 	
+	my.priceOfBouquet();
+	
+	}
+	
+	
+
+	
+	
 	
 //		Object components[] =new Component[] {
 //		new Ribbon(),
@@ -57,6 +66,6 @@ public class Bouquet {
 //		System.out.println(components[i].getPrice());
 //	}	
 }
-}
+
 
 
