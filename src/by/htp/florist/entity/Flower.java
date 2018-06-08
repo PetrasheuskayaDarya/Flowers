@@ -7,7 +7,7 @@ public class Flower extends Component {
 	public Flower() {
 	}
 	
-	public Flower (String freshness,int lengthOfStem, int price) {
+	public Flower(String freshness, int lengthOfStem, int price) {
 		super(price);
 		this.freshness = freshness;
 		this.lengthOfStem =lengthOfStem;
@@ -32,7 +32,7 @@ public class Flower extends Component {
 
 	@Override
 	public String toString() {
-		return "Flower [freshness=" + freshness + ", lengthOfStem=" + lengthOfStem + super.toString() + "]";
+		return "freshness=" + freshness + ", lengthOfStem=" + lengthOfStem + super.toString();
 	}
 
 

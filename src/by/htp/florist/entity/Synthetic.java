@@ -1,20 +1,17 @@
 package by.htp.florist.entity;
 
 public class Synthetic extends Flower {
-	
-	
-	
+
 	public int size;
-	
+
 	public Synthetic() {
 	}
-	
-	public Synthetic ( String freshness,int lengthOfStem, int price, int size) {
-		
-	    super (freshness, lengthOfStem, price);
+
+	public Synthetic(String freshness, int lengthOfStem, int price, int size) {
+
+		super(freshness, lengthOfStem, price);
 		this.size = size;
-		
-		
+
 	}
 
 	public int getSize() {
@@ -29,8 +26,5 @@ public class Synthetic extends Flower {
 	public String toString() {
 		return "Synthetic [size=" + size + super.toString() + "]";
 	}
-	
-	
 
-	
 }

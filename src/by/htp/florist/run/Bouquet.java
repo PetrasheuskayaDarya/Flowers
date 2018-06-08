@@ -7,65 +7,38 @@ import by.htp.florist.entity.Ribbon;
 import by.htp.florist.entity.Synthetic;
 import by.htp.florist.entity.Wild;
 
-
-
 public class Bouquet {
 	public static void main(String[] args) {
-//	÷‚ÂÚÓ˜ÌËˆ‡. ŒÔÂ‰ÂÎËÚ¸ ËÂ‡ıË˛ ˆ‚ÂÚÓ‚. —ÓÁ‰‡Ú¸ ÌÂÒÍÓÎ¸ÍÓ Ó·˙ÂÍ-
-//	ÚÓ‚-ˆ‚ÂÚÓ‚. —Ó·‡Ú¸ ·ÛÍÂÚ (ËÒÔÓÎ¸ÁÛˇ ‡ÍÒÂÒÒÛ‡˚) Ò ÓÔÂ‰ÂÎÂÌËÂÏ Â„Ó
-//	ÒÚÓËÏÓÒÚË. œÓ‚ÂÒÚË ÒÓÚËÓ‚ÍÛ ˆ‚ÂÚÓ‚ ‚ ·ÛÍÂÚÂ Ì‡ ÓÒÌÓ‚Â ÛÓ‚Ìˇ Ò‚Â-
-//	ÊÂÒÚË. Õ‡ÈÚË ˆ‚ÂÚÓÍ ‚ ·ÛÍÂÚÂ, ÒÓÓÚ‚ÂÚÒÚ‚Û˛˘ËÈ Á‡‰‡ÌÌÓÏÛ ‰Ë‡Ô‡ÁÓÌÛ
-//	‰ÎËÌ ÒÚÂ·ÎÂÈ.
-	
-	Ribbon ribbon = new Ribbon ( "red",10, 20);
-	Wild wild = new Wild ("fresh", 10, 20, "red");
-	Synthetic synthetic = new Synthetic("fresh", 11, 20, 5);
-	
-	
-//	Flower flower = new Flower();
-//	Accessory accessory = new Accessory();
-//	
-//	Component component = new Component();
-//
-//	 component.components[0] = wild;
-//	 component.components[1] = synthetic;
-//	 component.components[3] = ribbon;
-	
+		// –¶–≤–µ—Ç–æ—á–Ω–∏—Ü–∞. –û–ø—Ä–µ–¥–µ–ª–∏—Ç—å –∏–µ—Ä–∞—Ä—Ö–∏—é —Ü–≤–µ—Ç–æ–≤. –°–æ–∑–¥–∞—Ç—å –Ω–µ—Å–∫–æ–ª—å–∫–æ –æ–±—ä–µ–∫-
+		// —Ç–æ–≤-—Ü–≤–µ—Ç–æ–≤. –°–æ–±—Ä–∞—Ç—å –±—É–∫–µ—Ç (–∏—Å–ø–æ–ª—å–∑—É—è –∞–∫—Å–µ—Å—Å—É–∞—Ä—ã) —Å –æ–ø—Ä–µ–¥–µ–ª–µ–Ω–∏–µ–º –µ–≥–æ
+		// —Å—Ç–æ–∏–º–æ—Å—Ç–∏. –ü—Ä–æ–≤–µ—Å—Ç–∏ —Å–æ—Ä—Ç–∏—Ä–æ–≤–∫—É —Ü–≤–µ—Ç–æ–≤ –≤ –±—É–∫–µ—Ç–µ –Ω–∞ –æ—Å–Ω–æ–≤–µ —É—Ä–æ–≤–Ω—è —Å–≤–µ-
+		// –∂–µ—Å—Ç–∏. –ù–∞–π—Ç–∏ —Ü–≤–µ—Ç–æ–∫ –≤ –±—É–∫–µ—Ç–µ, —Å–æ–æ—Ç–≤–µ—Ç—Å—Ç–≤—É—é—â–∏–π –∑–∞–¥–∞–Ω–Ω–æ–º—É –¥–∏–∞–ø–∞–∑–æ–Ω—É
+		// –¥–ª–∏–Ω —Å—Ç–µ–±–ª–µ–π.
 
-//	public static void main(String[] args) {
-	
-	
-	Component[] components = new Component[3];
-	Component my = new Component();
+		Accessory ribbon = new Ribbon("red", 10, 20);
+		Flower wild = new Wild("fresh", 10, 20, "red");
+		Flower synthetic = new Synthetic("fresh", 11, 20, 5);
 
-	components[0] = ribbon;
-	components[1] = wild;
-	components[2] = synthetic;
-	
-	my.setComponents(components);
-	System.out.println(my);
-	
-	my.priceOfBouquet();
-	
-	}
-	
-	
-
-	
-	
-	
-//		Object components[] =new Component[] {
-//		new Ribbon(),
-//		new Wild(),
-//		new Synthetic(),
-//};
 		
-//for (int i=0; components.
-//	length >3; i++) {
-//	if (components[i].getPrice() ==  20) {
-//		System.out.println(components[i].getPrice());
-//	}	
+
+		Component[] components = new Component[3];
+		Component my = new Component();
+
+		components[0] = ribbon; //—Å–æ–∑–¥–∞—Ç—å –∫–ª–∞—Å—Å –∏ –ø–æ–ª–æ–∂–∏—Ç—å —Ç—É–¥–∞ —á–∞—Å—Ç–∏ –±—É–∫–µ—Ç–∞ –∏ –¥–æ–±–∞–≤–ª—è—Ç—å —á–µ—Ä–µ–∑ –º–µ—Ç–æ–¥ 
+		components[1] = wild;
+		components[2] = synthetic;
+
+		my.setComponents(components);
+		
+		my.priceOfBouquet();
+		my.showBouquet();
+		
+		Component[] mySortBoquet = my.sortByLengthOfStem(2, 20);
+		Component mySort = new Component();
+		mySort.setComponents(mySortBoquet);
+		mySort.showBouquet();
+
+	}
+
+
 }
-
-
-
